@@ -96,7 +96,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:text="https://github.com/2024807336-code/ICT602CS240-5BAzrulAssignmentIndividual.git"
+                android:text="https://github.com/2024807336-code/ICT602-Electricity-Bill-Calculator"
                 android:textColor="#087E78"
                 android:textSize="12sp"
                 android:autoLink="web"
