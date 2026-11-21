@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F6F8"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Electricity Bill"
+            android:textColor="#173C43"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:padding="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Month -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Month"
+                android:textColor="#334155"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinnerEditMonth"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_input"
+                android:textColor="#000000"
+                android:entries="@array/months"
+                android:padding="10dp" />
+
+            <!-- Electricity Units -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Electricity Units (kWh)"
+                android:textColor="#334155"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etEditUnits"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_input"
+                android:hint="Enter units (1 - 1000)"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:maxLength="4"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp" />
+
+            <!-- Rebate -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Rebate Percentage (%)"
+                android:textColor="#334155"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etEditRebate"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_input"
+                android:hint="Enter rebate (0 - 5)"
+                android:inputType="numberDecimal"
+                android:maxLength="4"
+                android:textColor="#000000"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp" />
+
+            <!-- Update Button -->
+            <Button
+                android:id="@+id/btnSaveChanges"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="#087E78"
+                android:text="Update Bill"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <!-- Cancel Button -->
+            <Button
+                android:id="@+id/btnCancelEdit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#DCEFEB"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textColor="#087E78" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
